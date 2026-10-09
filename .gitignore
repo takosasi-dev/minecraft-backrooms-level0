@@ -1,0 +1,18 @@
+# --- Node（型定義だけ。npm install で入る） ---
+node_modules/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- ビルド成果物（python tools/build_mcaddon.py で作り直せる） ---
+dist/
+*.mcaddon
+*.mcpack
+*.zip
+
+# --- OS/エディタ ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

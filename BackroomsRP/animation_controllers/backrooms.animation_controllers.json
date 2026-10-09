@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.backrooms.hound.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": { "animations": ["idle"], "blend_transition": 0.2,
+                  "transitions": [{ "walk": "query.modified_move_speed >= 0.1" }] },
+        "walk": { "animations": ["walk"], "blend_transition": 0.2,
+                  "transitions": [{ "idle": "query.modified_move_speed < 0.1" }, { "run": "query.modified_move_speed >= 0.5" }] },
+        "run": { "animations": ["run"], "blend_transition": 0.2,
+                 "transitions": [{ "walk": "query.modified_move_speed < 0.5" }] }
+      }
+    },
+    "controller.animation.backrooms.hound.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": { "transitions": [{ "attacking": "query.is_delayed_attacking" }] },
+        "attacking": { "animations": ["attack"], "blend_transition": 0.1,
+                       "transitions": [{ "default": "!query.is_delayed_attacking || query.all_animations_finished" }] }
+      }
+    },
+    "controller.animation.backrooms.shadow.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": { "animations": ["idle"], "blend_transition": 0.2,
+                  "transitions": [{ "walk": "query.modified_move_speed >= 0.1" }] },
+        "walk": { "animations": ["walk"], "blend_transition": 0.2,
+                  "transitions": [{ "idle": "query.modified_move_speed < 0.1" }] }
+      }
+    },
+    "controller.animation.backrooms.smiler.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": { "animations": ["idle"], "blend_transition": 0.2,
+                  "transitions": [{ "move": "query.modified_move_speed >= 0.1" }] },
+        "move": { "animations": ["move"], "blend_transition": 0.2,
+                  "transitions": [{ "idle": "query.modified_move_speed < 0.1" }] }
+      }
+    },
+    "controller.animation.backrooms.smiler.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": { "transitions": [{ "attacking": "query.is_delayed_attacking" }] },
+        "attacking": { "animations": ["attack"], "blend_transition": 0.1,
+                       "transitions": [{ "default": "!query.is_delayed_attacking || query.all_animations_finished" }] }
+      }
+    }
+  }
+}

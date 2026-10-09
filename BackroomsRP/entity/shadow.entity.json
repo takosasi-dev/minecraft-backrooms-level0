@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "backrooms:shadow",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/shadow",
+        "v1": "textures/entity/shadow_1",
+        "v2": "textures/entity/shadow_2"
+      },
+      "geometry": { "default": "geometry.backrooms.shadow" },
+      "animations": {
+        "look_at_target": "animation.backrooms.look_at_target",
+        "idle": "animation.backrooms.shadow.idle",
+        "walk": "animation.backrooms.shadow.walk",
+        "move_controller": "controller.animation.backrooms.shadow.move"
+      },
+      "scripts": { "animate": ["look_at_target", "move_controller"] },
+      "render_controllers": ["controller.render.backrooms.variant"],
+      "spawn_egg": { "base_color": "#e2e0d4", "overlay_color": "#dcbca0" }
+    }
+  }
+}

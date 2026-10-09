@@ -1,0 +1,33 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "backrooms:recipe_noclip"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "CCC",
+      "CEC",
+      "CCC"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:yellow_carpet"
+      },
+      "E": {
+        "item": "minecraft:ender_pearl"
+      }
+    },
+    "result": {
+      "item": "backrooms:noclip",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ]
+  }
+}

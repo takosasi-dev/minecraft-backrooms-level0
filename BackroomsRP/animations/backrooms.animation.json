@@ -1,0 +1,104 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.backrooms.look_at_target": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": ["query.target_x_rotation", "query.target_y_rotation", 0.0]
+        }
+      }
+    },
+    "animation.backrooms.hound.idle": {
+      "loop": true,
+      "bones": {
+        "chest": { "position": [0.0, "math.sin(query.life_time * 540.0) * 0.35", 0.0] },
+        "neck": { "rotation": ["math.sin(query.life_time * 200.0) * 4.0", "math.sin(query.life_time * 90.0) * 6.0", 0.0] }
+      }
+    },
+    "animation.backrooms.hound.walk": {
+      "loop": true,
+      "bones": {
+        "leg_fl_upper": { "rotation": ["math.cos(query.modified_distance_moved * 38.17) * 40.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_br_upper": { "rotation": ["math.cos(query.modified_distance_moved * 38.17) * 40.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_fr_upper": { "rotation": ["math.cos(query.modified_distance_moved * 38.17 + 180.0) * 40.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_bl_upper": { "rotation": ["math.cos(query.modified_distance_moved * 38.17 + 180.0) * 40.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_fl_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 38.17)) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_br_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 38.17)) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_fr_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 38.17 + 180.0)) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_bl_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 38.17 + 180.0)) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "chest": { "rotation": [0.0, 0.0, "math.sin(query.modified_distance_moved * 38.17) * 4.0 * query.modified_move_speed"] }
+      }
+    },
+    "animation.backrooms.hound.run": {
+      "loop": true,
+      "bones": {
+        "leg_fl_upper": { "rotation": ["math.cos(query.modified_distance_moved * 30.0) * 60.0", 0.0, 0.0] },
+        "leg_fr_upper": { "rotation": ["math.cos(query.modified_distance_moved * 30.0 + 20.0) * 60.0", 0.0, 0.0] },
+        "leg_bl_upper": { "rotation": ["math.cos(query.modified_distance_moved * 30.0 + 180.0) * 60.0", 0.0, 0.0] },
+        "leg_br_upper": { "rotation": ["math.cos(query.modified_distance_moved * 30.0 + 200.0) * 60.0", 0.0, 0.0] },
+        "leg_fl_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 30.0)) * 45.0", 0.0, 0.0] },
+        "leg_fr_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 30.0 + 20.0)) * 45.0", 0.0, 0.0] },
+        "leg_bl_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 30.0 + 180.0)) * 45.0", 0.0, 0.0] },
+        "leg_br_lower": { "rotation": ["math.max(0.0, math.sin(query.modified_distance_moved * 30.0 + 200.0)) * 45.0", 0.0, 0.0] },
+        "chest": { "rotation": ["math.sin(query.modified_distance_moved * 30.0) * 8.0", 0.0, 0.0] },
+        "hips": { "rotation": ["math.sin(query.modified_distance_moved * 30.0 + 180.0) * 6.0", 0.0, 0.0] },
+        "neck": { "rotation": ["math.sin(query.modified_distance_moved * 30.0 + 90.0) * 6.0", 0.0, 0.0] },
+        "jaw": { "rotation": ["math.sin(query.modified_distance_moved * 30.0) * 8.0 + 8.0", 0.0, 0.0] }
+      }
+    },
+    "animation.backrooms.hound.attack": {
+      "animation_length": 0.6,
+      "bones": {
+        "neck": { "position": { "0.0": [0, 0, 0], "0.15": [0, 0, -1], "0.3": [0, -0.5, -3], "0.6": [0, 0, 0] },
+                  "rotation": { "0.0": [0, 0, 0], "0.3": [12, 0, 0], "0.6": [0, 0, 0] } },
+        "jaw": { "rotation": { "0.0": [0, 0, 0], "0.15": [38, 0, 0], "0.3": [0, 0, 0], "0.6": [0, 0, 0] } }
+      }
+    },
+    "animation.backrooms.shadow.idle": {
+      "loop": true,
+      "bones": {
+        "body": { "rotation": ["math.sin(query.life_time * 45.0) * 1.5", 0.0, "math.sin(query.life_time * 60.0) * 2.0"] },
+        "head": { "rotation": [0.0, 0.0, "math.sin(query.life_time * 40.0) * 4.0 + math.pow(math.max(0.0, math.sin(query.life_time * 97.0)), 40.0) * 25.0"] },
+        "arm_l": { "rotation": ["math.sin(query.life_time * 45.0) * 2.0", 0.0, 0.0] },
+        "arm_r": { "rotation": ["math.sin(query.life_time * 45.0 + 120.0) * 2.0", 0.0, 0.0] }
+      }
+    },
+    "animation.backrooms.shadow.walk": {
+      "loop": true,
+      "bones": {
+        "leg_l": { "rotation": ["math.cos(query.modified_distance_moved * 38.17) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "leg_r": { "rotation": ["math.cos(query.modified_distance_moved * 38.17 + 180.0) * 30.0 * query.modified_move_speed", 0.0, 0.0] },
+        "arm_l": { "rotation": ["math.cos(query.modified_distance_moved * 38.17 + 180.0) * 20.0 * query.modified_move_speed", 0.0, 0.0] },
+        "arm_r": { "rotation": ["math.cos(query.modified_distance_moved * 38.17) * 20.0 * query.modified_move_speed", 0.0, 0.0] },
+        "body": { "rotation": [0.0, 0.0, "math.sin(query.modified_distance_moved * 38.17) * 3.0 * query.modified_move_speed"] }
+      }
+    },
+    "animation.backrooms.smiler.idle": {
+      "loop": true,
+      "bones": {
+        "head": { "position": [0.0, "math.sin(query.life_time * 90.0) * 0.8", 0.0] },
+        "teeth_lower": { "position": [0.0, "math.sin(query.life_time * 1800.0) * 0.25", 0.0] },
+        "body": { "rotation": [0.0, 0.0, "math.sin(query.life_time * 150.0) * 3.0"],
+                  "scale": [1.0, "1.0 + math.sin(query.life_time * 230.0) * 0.04", 1.0] }
+      }
+    },
+    "animation.backrooms.smiler.move": {
+      "loop": true,
+      "bones": {
+        "head": { "position": [0.0, "math.sin(query.life_time * 90.0) * 0.8", 0.0],
+                  "rotation": [10.0, 0.0, "math.sin(query.life_time * 120.0) * 6.0"] },
+        "body": { "rotation": [8.0, 0.0, "math.sin(query.life_time * 150.0) * 5.0"],
+                  "scale": [1.0, "1.0 + math.sin(query.life_time * 230.0) * 0.06", 1.0] }
+      }
+    },
+    "animation.backrooms.smiler.attack": {
+      "animation_length": 0.6,
+      "bones": {
+        "teeth_lower": { "position": { "0.0": [0, 0, 0], "0.2": [0, -4, 0], "0.3": [0, 0, 0], "0.6": [0, 0, 0] } },
+        "teeth_upper": { "position": { "0.0": [0, 0, 0], "0.2": [0, 1.5, 0], "0.3": [0, 0, 0], "0.6": [0, 0, 0] } }
+      }
+    }
+  }
+}

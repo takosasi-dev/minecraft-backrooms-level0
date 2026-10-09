@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "backrooms:hound",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": { "default": "textures/entity/hound" },
+      "geometry": { "default": "geometry.backrooms.hound" },
+      "animations": {
+        "look_at_target": "animation.backrooms.look_at_target",
+        "idle": "animation.backrooms.hound.idle",
+        "walk": "animation.backrooms.hound.walk",
+        "run": "animation.backrooms.hound.run",
+        "attack": "animation.backrooms.hound.attack",
+        "move_controller": "controller.animation.backrooms.hound.move",
+        "attack_controller": "controller.animation.backrooms.hound.attack"
+      },
+      "scripts": { "animate": ["look_at_target", "move_controller", "attack_controller"] },
+      "render_controllers": ["controller.render.backrooms.default"],
+      "spawn_egg": { "base_color": "#423a34", "overlay_color": "#e8e2c0" }
+    }
+  }
+}

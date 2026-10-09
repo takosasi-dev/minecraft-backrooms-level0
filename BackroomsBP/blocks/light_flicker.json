@@ -1,0 +1,66 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "backrooms:light_flicker",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "backrooms:phase": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "components": {
+      "minecraft:display_name": "tile.backrooms:light_flicker.name",
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "backrooms_light_flicker",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:light_emission": 13
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('backrooms:phase') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "backrooms_light_flicker",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('backrooms:phase') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "backrooms_light_flicker_1",
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('backrooms:phase') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "backrooms_light_flicker_2",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

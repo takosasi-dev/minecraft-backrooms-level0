@@ -1,0 +1,40 @@
+pack.name=Backrooms Level 0 Resources
+pack.description=Textures, fog and ambience for Level 0
+
+tile.backrooms:wall.name=Yellowed Wallpaper
+tile.backrooms:floor.name=Damp Carpet
+tile.backrooms:ceiling.name=Ceiling Tile
+tile.backrooms:light.name=Fluorescent Panel
+tile.backrooms:exit_door.name=Exit Door
+tile.backrooms:outlet.name=Outlet
+tile.backrooms:switch.name=Light Switch
+tile.backrooms:exit_sign.name=Exit Sign
+tile.backrooms:ceiling_vent.name=Ceiling Vent
+tile.backrooms:ceiling_stained.name=Water-Stained Ceiling Tile
+tile.backrooms:ceiling_missing.name=Missing Ceiling Tile
+tile.backrooms:floor_stained.name=Stained Carpet
+tile.backrooms:floor_wet.name=Wet Carpet
+tile.backrooms:light_flicker.name=Flickering Fluorescent Light
+tile.backrooms:light_dead.name=Dead Fluorescent Light
+tile.backrooms:desk.name=Office Desk
+tile.backrooms:office_chair.name=Office Chair
+tile.backrooms:graffiti.name=Wall Graffiti
+tile.backrooms:manila_wall.name=Manila Wallpaper
+tile.backrooms:manila_border.name=Manila Wallpaper Border
+tile.backrooms:manila_light.name=Dim Orange Light
+
+item.backrooms:noclip.name=No-Clip
+item.backrooms:almond_water.name=Almond Water
+
+entity.backrooms:shadow.name=Faceling
+entity.backrooms:hound.name=Hound
+entity.backrooms:smiler.name=Smiler
+item.spawn_egg.entity.backrooms:shadow.name=Spawn Faceling
+item.spawn_egg.entity.backrooms:hound.name=Spawn Hound
+item.spawn_egg.entity.backrooms:smiler.name=Spawn Smiler
+tile.backrooms:l1_wall.name=Concrete Wall
+tile.backrooms:l1_rebar.name=Exposed Rebar Wall
+tile.backrooms:l1_floor.name=Concrete Floor
+tile.backrooms:l1_ceiling.name=Concrete Ceiling
+tile.backrooms:l1_light.name=Cold Fluorescent Light
+tile.backrooms:l1_puddle.name=Condensation Puddle

@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "backrooms",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "backrooms_noclip": {
+      "textures": "textures/items/noclip"
+    },
+    "backrooms_almond_water": {
+      "textures": "textures/items/almond_water"
+    }
+  }
+}

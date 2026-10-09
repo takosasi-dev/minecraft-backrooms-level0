@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "backrooms:smiler",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/smiler" },
+      "geometry": { "default": "geometry.backrooms.smiler" },
+      "animations": {
+        "look_at_target": "animation.backrooms.look_at_target",
+        "idle": "animation.backrooms.smiler.idle",
+        "move": "animation.backrooms.smiler.move",
+        "attack": "animation.backrooms.smiler.attack",
+        "move_controller": "controller.animation.backrooms.smiler.move",
+        "attack_controller": "controller.animation.backrooms.smiler.attack"
+      },
+      "scripts": { "animate": ["look_at_target", "move_controller", "attack_controller"] },
+      "render_controllers": ["controller.render.backrooms.glow"],
+      "spawn_egg": { "base_color": "#050505", "overlay_color": "#f6f4e8" }
+    }
+  }
+}

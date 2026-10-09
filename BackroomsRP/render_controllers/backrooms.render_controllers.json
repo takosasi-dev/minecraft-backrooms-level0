@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.backrooms.default": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.backrooms.glow": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.default"],
+      "ignore_lighting": true
+    },
+    "controller.render.backrooms.variant": {
+      "arrays": {
+        "textures": {
+          "Array.skins": ["Texture.default", "Texture.v1", "Texture.v2"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Array.skins[query.variant]"]
+    }
+  }
+}

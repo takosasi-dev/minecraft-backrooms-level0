@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "バックルームズ Level 0 リソース v0.5.0",
+    "description": "Level 0 のテクスチャ / フォグ / 環境音",
+    "uuid": "406b5429-07c4-4582-8e67-3a1fb9fdc994",
+    "version": [
+      0,
+      5,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "18507937-6c9f-47ff-9917-ed71d6a25085",
+      "version": [
+        0,
+        5,
+        0
+      ]
+    }
+  ]
+}

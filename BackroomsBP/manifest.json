@@ -1,0 +1,54 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "バックルームズ Level 0 v0.5.0",
+    "description": "Level 0 の無限ロビーを生成するビヘイビアパック",
+    "uuid": "33e04264-5682-492a-a834-50b194f7a591",
+    "version": [
+      0,
+      5,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      50
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "54505d18-df62-43f8-8691-d77027ec96d6",
+      "version": [
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "0cfa6b33-876a-461a-be0c-5864a6613e3f",
+      "version": [
+        0,
+        5,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0"
+    },
+    {
+      "uuid": "406b5429-07c4-4582-8e67-3a1fb9fdc994",
+      "version": [
+        0,
+        5,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.backrooms.smiler",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [
+          0,
+          1.2,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "root",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "body",
+          "pivot": [
+            0,
+            2,
+            1
+          ],
+          "parent": "root",
+          "cubes": [
+            {
+              "origin": [
+                -8,
+                2,
+                1.5
+              ],
+              "size": [
+                16,
+                34,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    34
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    16,
+                    34
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                -10,
+                2,
+                2.5
+              ],
+              "size": [
+                9,
+                26,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    9,
+                    26
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    16,
+                    0
+                  ],
+                  "uv_size": [
+                    9,
+                    26
+                  ]
+                }
+              }
+            },
+            {
+              "origin": [
+                1,
+                2,
+                2.5
+              ],
+              "size": [
+                9,
+                28,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    25,
+                    0
+                  ],
+                  "uv_size": [
+                    9,
+                    28
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    25,
+                    0
+                  ],
+                  "uv_size": [
+                    9,
+                    28
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "head",
+          "pivot": [
+            0,
+            27,
+            0
+          ],
+          "parent": "root"
+        },
+        {
+          "name": "eyes",
+          "pivot": [
+            0,
+            30,
+            0
+          ],
+          "parent": "head",
+          "cubes": [
+            {
+              "origin": [
+                -9,
+                30,
+                0
+              ],
+              "size": [
+                18,
+                4,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    34,
+                    0
+                  ],
+                  "uv_size": [
+                    18,
+                    4
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    34,
+                    0
+                  ],
+                  "uv_size": [
+                    18,
+                    4
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "teeth_upper",
+          "pivot": [
+            0,
+            26,
+            0
+          ],
+          "parent": "head",
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                18,
+                -0.5
+              ],
+              "size": [
+                22,
+                11,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    34
+                  ],
+                  "uv_size": [
+                    22,
+                    11
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    0,
+                    34
+                  ],
+                  "uv_size": [
+                    22,
+                    11
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "teeth_lower",
+          "pivot": [
+            0,
+            23,
+            0
+          ],
+          "parent": "head",
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                18,
+                -0.6
+              ],
+              "size": [
+                22,
+                11,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    22,
+                    34
+                  ],
+                  "uv_size": [
+                    22,
+                    11
+                  ]
+                },
+                "south": {
+                  "uv": [
+                    22,
+                    34
+                  ],
+                  "uv_size": [
+                    22,
+                    11
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "throat",
+          "pivot": [
+            0,
+            24,
+            0
+          ],
+          "parent": "head",
+          "cubes": [
+            {
+              "origin": [
+                -11,
+                15,
+                0.5
+              ],
+              "size": [
+                22,
+                14,
+                0
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    45
+                  ],
+                  "uv_size": [
+                    22,
+                    14
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

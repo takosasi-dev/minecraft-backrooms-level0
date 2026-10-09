@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.20",
+  "minecraft:item": {
+    "description": {
+      "identifier": "backrooms:almond_water",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "backrooms_almond_water",
+      "minecraft:display_name": {
+        "value": "item.backrooms:almond_water.name"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "can_always_eat": true,
+        "nutrition": 2,
+        "saturation_modifier": 0.6,
+        "using_converts_to": "minecraft:glass_bottle"
+      },
+      "minecraft:use_animation": "drink",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      }
+    }
+  }
+}

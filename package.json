@@ -1,0 +1,17 @@
+{
+  "name": "backrooms-level0-addon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minecraft Bedrock: Backrooms Level 0 dimension generator addon",
+  "scripts": {
+    "validate": "node tools/validate.cjs",
+    "test": "node tools/test_layout.mjs",
+    "build": "python tools/build_mcaddon.py"
+  },
+  "devDependencies": {
+    "@minecraft/server": "^2.10.0",
+    "@minecraft/server-ui": "^2.1.0",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "resource_pack_name": "backrooms",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "backrooms_wall": {
+      "textures": "textures/blocks/wall"
+    },
+    "backrooms_floor": {
+      "textures": "textures/blocks/floor"
+    },
+    "backrooms_ceiling": {
+      "textures": "textures/blocks/ceiling"
+    },
+    "backrooms_light": {
+      "textures": "textures/blocks/light"
+    },
+    "backrooms_exit_door": {
+      "textures": "textures/blocks/exit_door"
+    },
+    "backrooms_outlet": {
+      "textures": "textures/blocks/outlet"
+    },
+    "backrooms_switch": {
+      "textures": "textures/blocks/switch"
+    },
+    "backrooms_exit_sign_left": {
+      "textures": "textures/blocks/exit_sign_left"
+    },
+    "backrooms_exit_sign_right": {
+      "textures": "textures/blocks/exit_sign_right"
+    },
+    "backrooms_exit_sign_none": {
+      "textures": "textures/blocks/exit_sign_none"
+    },
+    "backrooms_ceiling_vent": {
+      "textures": "textures/blocks/ceiling_vent"
+    },
+    "backrooms_ceiling_stained": {
+      "textures": "textures/blocks/ceiling_stained"
+    },
+    "backrooms_ceiling_missing": {
+      "textures": "textures/blocks/ceiling_missing"
+    },
+    "backrooms_floor_stained": {
+      "textures": "textures/blocks/floor_stained"
+    },
+    "backrooms_floor_wet": {
+      "textures": "textures/blocks/floor_wet"
+    },
+    "backrooms_light_flicker": {
+      "textures": "textures/blocks/light_flicker"
+    },
+    "backrooms_light_flicker_1": {
+      "textures": "textures/blocks/light_flicker_1"
+    },
+    "backrooms_light_flicker_2": {
+      "textures": "textures/blocks/light_flicker_2"
+    },
+    "backrooms_light_dead": {
+      "textures": "textures/blocks/light_dead"
+    },
+    "backrooms_desk": {
+      "textures": "textures/blocks/desk"
+    },
+    "backrooms_office_chair": {
+      "textures": "textures/blocks/office_chair"
+    },
+    "backrooms_graffiti_0": {
+      "textures": "textures/blocks/graffiti_0"
+    },
+    "backrooms_graffiti_1": {
+      "textures": "textures/blocks/graffiti_1"
+    },
+    "backrooms_graffiti_2": {
+      "textures": "textures/blocks/graffiti_2"
+    },
+    "backrooms_graffiti_3": {
+      "textures": "textures/blocks/graffiti_3"
+    },
+    "backrooms_graffiti_4": {
+      "textures": "textures/blocks/graffiti_4"
+    },
+    "backrooms_graffiti_5": {
+      "textures": "textures/blocks/graffiti_5"
+    },
+    "backrooms_manila_wall": {
+      "textures": "textures/blocks/manila_wall"
+    },
+    "backrooms_manila_border": {
+      "textures": "textures/blocks/manila_border"
+    },
+    "backrooms_manila_light": {
+      "textures": "textures/blocks/manila_light"
+    },
+    "backrooms_l1_wall": {
+      "textures": "textures/blocks/l1_wall"
+    },
+    "backrooms_l1_rebar": {
+      "textures": "textures/blocks/l1_rebar"
+    },
+    "backrooms_l1_floor": {
+      "textures": "textures/blocks/l1_floor"
+    },
+    "backrooms_l1_ceiling": {
+      "textures": "textures/blocks/l1_ceiling"
+    },
+    "backrooms_l1_light": {
+      "textures": "textures/blocks/l1_light"
+    },
+    "backrooms_l1_puddle": {
+      "textures": "textures/blocks/l1_puddle"
+    }
+  }
+}
